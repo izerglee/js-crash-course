@@ -1,11 +1,13 @@
-let str = 'Isaac'
-console.log(str[str.length - 1])
+let cash = 30
+let price = 40
+let change = cash - price
 
-let fullName = 'Isaac Lee'
-let temperature = 20
-let planet = 'Earth'
-let isRaining = true
-
-temperature = temperature + 2
-
-console.log(temperature)
+if (cash > price) {
+   console.log(`you paid extra - here's ${change} dollars change`)
+}
+else if (cash === price) {
+    console.log("you paid the exact amount, have a nice day!")
+}
+else  {
+    console.log(`not enough money - you still owe ${change} dollars`)
+}
