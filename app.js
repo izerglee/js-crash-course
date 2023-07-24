@@ -1,6 +1,17 @@
-function welcomePersonToFes(name) {
-    console.log(`Welcome to FES, ${name}`)
-    
+function seconds(hour) {
+    return hour * 3600;
 }
 
-welcomePersonToFes('Isaac');
+console.log(seconds(2));
+
+function seconds(hour) {
+    return hour * 3600;
+}
+
+console.log(seconds(10));
+
+function seconds(hour) {
+    return hour * 3600;
+}
+
+console.log(seconds(24));
