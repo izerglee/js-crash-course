@@ -18,10 +18,34 @@
 
 // console.log(triangleArea(20, 20))
 
-function appendFrontend (string) {
-    return 'Frontend' + string
+// function appendFrontend (string) {
+//     return 'Frontend' + string
+// }
+
+// console.log(appendFrontend('Apple'))
+// console.log(appendFrontend('Banana'))
+// console.log(appendFrontend('Orange'))
+
+// function greaterThan (num1, num2){
+//     return (num1 + num2) > 100
+// }
+
+// console.log(greaterThan(20, 10))
+// console.log(greaterThan(50, 60))
+// console.log(greaterThan(100, -50))
+
+// function lessThanOrEqualToZero (num1) {
+//     return num1 <= 0
+// }
+
+// console.log(lessThanOrEqualToZero(3))
+// console.log(lessThanOrEqualToZero(0))
+// console.log(lessThanOrEqualToZero(-2))
+
+function oppositeBoolean (boolean) {
+    return !boolean
 }
 
-console.log(appendFrontend('Apple'))
-console.log(appendFrontend('Banana'))
-console.log(appendFrontend('Orange'))
+console.log(oppositeBoolean(true))
+console.log(oppositeBoolean(false))
+
