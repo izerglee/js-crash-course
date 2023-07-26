@@ -42,10 +42,17 @@
 // console.log(lessThanOrEqualToZero(0))
 // console.log(lessThanOrEqualToZero(-2))
 
-function oppositeBoolean (boolean) {
-    return !boolean
+// function oppositeBoolean (boolean) {
+//     return !boolean
+// }
+
+// console.log(oppositeBoolean(true))
+// console.log(oppositeBoolean(false))
+
+function isNotZero (elem) {
+    return elem !== 0 
 }
 
-console.log(oppositeBoolean(true))
-console.log(oppositeBoolean(false))
-
+console.log(isNotZero(5))
+console.log(isNotZero(0))
+console.log(isNotZero(null))
