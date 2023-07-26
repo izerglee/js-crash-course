@@ -1,17 +1,7 @@
-// function seconds(hour) {
-//     return hour * 3600;
-// }
+function calcRemainder (num1, num2) {
+    return num1 % num2 
+}
 
-// console.log(seconds(2));
-
-// function seconds(hour) {
-//     return hour * 3600;
-// }
-
-// console.log(seconds(10));
-
-// function seconds(hour) {
-//     return hour * 3600;
-// }
-
-// console.log(seconds(24));
+console.log(calcRemainder(4, 2))
+console.log(calcRemainder(7, 8))
+console.log(calcRemainder(9, 8))
