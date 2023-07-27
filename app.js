@@ -14,10 +14,22 @@
 // console.log(isOdd(2))
 // console.log(isOdd(3))
 
-function booleanInteger(num) {
-  return  num % 2 === 0 ? 1 : -1
+// function booleanInteger(num) {
+//   return  num % 2 === 0 ? 1 : -1
+// }
+
+// console.log(booleanInteger(1))
+// console.log(booleanInteger(2))
+// console.log(booleanInteger(5))
+
+
+function loggedAndSubscribed (status, user) {
+  return status === 'LOGGED_IN' || user === 'SUBSCRIBED'
+  
 }
 
-console.log(booleanInteger(1))
-console.log(booleanInteger(2))
-console.log(booleanInteger(5))
+
+
+console.log(loggedAndSubscribed('LOGGED_IN', 'SUBSCRIBED'))
+console.log(loggedAndSubscribed('LOGGED_OUT', 'SUBSCRIBED'))
+console.log(loggedAndSubscribed('LOGGED_IN', 'UNSUBSCRIBED'))
