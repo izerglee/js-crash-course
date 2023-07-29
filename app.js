@@ -23,13 +23,26 @@
 // console.log(booleanInteger(5))
 
 
-function loggedAndSubscribed (status, user) {
-  return status === 'LOGGED_IN' || user === 'SUBSCRIBED'
+// function loggedAndSubscribed (status, user) {
+//   return status === 'LOGGED_IN' && user === 'SUBSCRIBED'
   
+// }
+
+
+
+// console.log(loggedAndSubscribed('LOGGED_IN', 'SUBSCRIBED'))
+// console.log(loggedAndSubscribed('LOGGED_OUT', 'SUBSCRIBED'))
+// console.log(loggedAndSubscribed('LOGGED_IN', 'UNSUBSCRIBED'))
+
+
+let grades = ['A+', 'FAIL', 'A']
+
+let goodGrades = []
+
+for (let i = 0; i < grades.length; ++i) {
+  if (grades[i] !== 'FAIL') {
+goodGrades.push(grades[i])
+  }
 }
 
-
-
-console.log(loggedAndSubscribed('LOGGED_IN', 'SUBSCRIBED'))
-console.log(loggedAndSubscribed('LOGGED_OUT', 'SUBSCRIBED'))
-console.log(loggedAndSubscribed('LOGGED_IN', 'UNSUBSCRIBED'))
+console.log(goodGrades)
