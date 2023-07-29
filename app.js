@@ -53,12 +53,15 @@
 
 // console.log(cents)
 
-let dollar = [0, 10, 20]
+// let dollar = [0, 10, 20]
 
-let cents = []
+// let cents = []
 
-for (let i = 0; i < dollar.length; ++i) {
-  cents.push(dollar[i] * 100)
-}
+// for (let i = 0; i < dollar.length; ++i) {
+//   cents.push(dollar[i] * 100)
+// }
 
-console.log(cents)
+// console.log(cents)
+
+
+function filerOutFalsy(elem)
