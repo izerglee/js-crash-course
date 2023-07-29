@@ -35,14 +35,30 @@
 // console.log(loggedAndSubscribed('LOGGED_IN', 'UNSUBSCRIBED'))
 
 
-let grades = ['A+', 'FAIL', 'A']
+// let grades = ['A+', 'FAIL', 'A']
 
-let goodGrades = []
+// let goodGrades = []
 
-for (let i = 0; i < grades.length; ++i) {
-  if (grades[i] !== 'FAIL') {
-goodGrades.push(grades[i])
-  }
+// for (let i = 0; i < grades.length; ++i) {
+//   if (grades[i] !== 'FAIL') {
+// goodGrades.push(grades[i])
+//   }
+// }
+
+// console.log(goodGrades)
+
+// let dollar = [1, 4, 9, 16]
+
+// let cents = dollar.map( element => element * 100)
+
+// console.log(cents)
+
+let dollar = [0, 10, 20]
+
+let cents = []
+
+for (let i = 0; i < dollar.length; ++i) {
+  cents.push(dollar[i] * 100)
 }
 
-console.log(goodGrades)
+console.log(cents)
