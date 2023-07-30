@@ -80,11 +80,23 @@
 // console.log(arrLength([5, 0, -4, 1]));
 // console.log(arrLength([]));
 
-function lastElem(elem){ 
-    return elem[elem.length - 1]
+// function lastElem(elem){ 
+//     return elem[elem.length - 1]
+// }
+
+// console.log(lastElem([3, 2, 0, 6, 2]))
+// console.log(lastElem(['dog', 'cat', 'ball']))
+// console.log(lastElem([null, 5, false]))
+
+function arrSum(arr) {
+for (let i = 0; i < arr.length; ++i){
+    console.log()
 }
 
-console.log(lastElem([3, 2, 0, 6, 2]))
-console.log(lastElem(['dog', 'cat', 'ball']))
-console.log(lastElem([null, 5, false]))
+}
+
+console.log(arrSum([2, 2, 2]))
+console.log(arrSum([100, 200, 500]))
+console.log(arrSum([0, -5, -10]))
+
 
