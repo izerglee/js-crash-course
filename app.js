@@ -64,10 +64,18 @@
 // console.log(cents)
 
 
-function filerOutFalsy(elem1, elem2) {
-    return (!elem1) ? elem1 : elem2 
+// function filerOutFalsy(elem1, elem2) {
+//     return (!elem1) ? elem1 : elem2 
+// }
+
+// console.log(filerOutFalsy(0, 5));
+// console.log(filerOutFalsy(false, 100));
+// console.log(filerOutFalsy(true, 'Dog'));
+
+function arrLength(arr) {
+    return arr.length;
 }
 
-console.log(filerOutFalsy(0, 5));
-console.log(filerOutFalsy(false, 100));
-console.log(filerOutFalsy(true, 'Dog'));
+console.log(arrLength([1, 2, 3]));
+console.log(arrLength([5, 0, -4, 1]));
+console.log(arrLength([]));
