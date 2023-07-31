@@ -89,10 +89,11 @@
 // console.log(lastElem([null, 5, false]))
 
 function arrSum(arr) {
+    let sum = 0
 for (let i = 0; i < arr.length; ++i){
-    console.log()
+    sum = sum + arr[i]
 }
-
+return sum
 }
 
 console.log(arrSum([2, 2, 2]))
