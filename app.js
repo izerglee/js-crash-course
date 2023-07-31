@@ -88,16 +88,25 @@
 // console.log(lastElem(['dog', 'cat', 'ball']))
 // console.log(lastElem([null, 5, false]))
 
-function arrSum(arr) {
-    let sum = 0
-for (let i = 0; i < arr.length; ++i){
-    sum = sum + arr[i]
-}
-return sum
+// function arrSum(arr) {
+//     let sum = 0
+// for (let i = 0; i < arr.length; ++i){
+//     sum = sum + arr[i]
+// }
+// return sum
+// }
+
+// console.log(arrSum([2, 2, 2]))
+// console.log(arrSum([100, 200, 500]))
+// console.log(arrSum([0, -5, -10]))
+
+function progressiveSum(num) {
+    let sum = 0 
+    for (let i = 0; i < num; ++i) {
+        sum = sum + num
+    }
+    return sum
 }
 
-console.log(arrSum([2, 2, 2]))
-console.log(arrSum([100, 200, 500]))
-console.log(arrSum([0, -5, -10]))
-
+console.log(progressiveSum(3))
 
