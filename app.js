@@ -100,18 +100,31 @@
 // console.log(arrSum([100, 200, 500]))
 // console.log(arrSum([0, -5, -10]))
 
-function progressiveSum(num) {
-    let sum = 0
-    for (let i = 1; i < num; ++i) {
-        sum = sum + i
+// function progressiveSum(num) {
+//     let sum = 0
+//     for (let i = 1; i < num; ++i) {
+//         sum = sum + i
+//     }
+//     return sum
+// }
+
+
+
+// console.log(progressiveSum(3))
+// console.log(progressiveSum(4))
+// console.log(progressiveSum(601))
+
+function calcTime (seconds) {
+    let timerMinutes = Math.floor(seconds/60)
+    let timerSeconds = seconds % 60;
+
+    if (timerMinutes.toString().length === 1) {
+        timerMinutes = '0' + timerMinutes
     }
-    return sum
+
+    return timerMinutes + ':' + timerSeconds;
 }
 
-
-
-console.log(progressiveSum(3))
-console.log(progressiveSum(4))
-console.log(progressiveSum(601))
+console.log(calcTime(10))
 
 
