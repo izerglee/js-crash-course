@@ -101,12 +101,17 @@
 // console.log(arrSum([0, -5, -10]))
 
 function progressiveSum(num) {
-    let sum = 0 
-    for (let i = 0; i < num; ++i) {
-        sum = sum + num
+    let sum = 0
+    for (let i = 1; i < num; ++i) {
+        sum = sum + i
     }
     return sum
 }
 
+
+
 console.log(progressiveSum(3))
+console.log(progressiveSum(4))
+console.log(progressiveSum(601))
+
 
