@@ -114,17 +114,29 @@
 // console.log(progressiveSum(4))
 // console.log(progressiveSum(601))
 
-function calcTime (seconds) {
-    let timerMinutes = Math.floor(seconds/60)
-    let timerSeconds = seconds % 60;
+// function calcTime (seconds) {
+//     let timerMinutes = Math.floor(seconds/60)
+//     let timerSeconds = seconds % 60;
 
-    if (timerMinutes.toString().length === 1) {
-        timerMinutes = '0' + timerMinutes
+//     if (timerMinutes.toString().length === 1) {
+//         timerMinutes = '0' + timerMinutes
+//     }
+
+//     return timerMinutes + ':' + timerSeconds;
+// }
+
+// console.log(calcTime(66))
+// console.log(calcTime(50))
+// console.log(calcTime(300))
+
+function getMax (arr) { 
+    let max = arr[0]
+    for (let i = 0; i < arr.length; ++i) {
+        if(arr[i] > max) {
+            max = arr[i];
+        }
     }
+return max
+} 
 
-    return timerMinutes + ':' + timerSeconds;
-}
-
-console.log(calcTime(10))
-
-
+console.log(getMax([-100, -200, -300]))
