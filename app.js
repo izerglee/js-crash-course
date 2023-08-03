@@ -153,12 +153,20 @@
 // console.log(reverseString('abc'))
 // console.log(reverseString('This is cool'))
 
+// function reverseString(str) {
+//  let inverseStr = ''
+//     for (let i = str.length; i >= 0; --i) {
+// inverseStr += str[i]
+//     }
+// return inverseStr
+// }
+
+// console.log(reverseString('isaac'))
+// console.log(reverseString('abc'))
+// console.log(reverseString('This is cool'))
+
 function reverseString(str) {
- let inverseStr = ''
-    for (let i = str.length; i >= 0; --i) {
-inverseStr += str[i]
-    }
-return inverseStr
+return str.split('').reverse().join('')
 }
 
 console.log(reverseString('isaac'))
