@@ -165,10 +165,38 @@
 // console.log(reverseString('abc'))
 // console.log(reverseString('This is cool'))
 
-function reverseString(str) {
-return str.split('').reverse().join('')
+// function reverseString(str) {
+// return str.split('').reverse().join('')
+// }
+
+// console.log(reverseString('isaac'))
+// console.log(reverseString('abc'))
+// console.log(reverseString('This is cool'))
+
+// function convertToZeros(arr) {
+//      return new Array(arr.length).fill(0);
+// }
+
+// console.log(convertToZeros([12]))
+// console.log(convertToZeros([5, 100, 0]))
+// console.log(convertToZeros([1, 2, 3, 4, 5]))
+
+// function convertToZeros(arr) {
+//     let newArr = 0;
+//     for (let i = 0; i < arr.length; ++i) {
+//       newArr[i] = 0  
+//     }
+//     return newArr;
+// }
+
+// console.log(convertToZeros([12]))
+// console.log(convertToZeros([5, 100, 0]))
+// console.log(convertToZeros([1, 2, 3, 4, 5]))
+
+function convertToZeros (arr) {
+   return arr.map(elem => 0);
 }
 
-console.log(reverseString('isaac'))
-console.log(reverseString('abc'))
-console.log(reverseString('This is cool'))
+console.log(convertToZeros([12]))
+console.log(convertToZeros([5, 100, 0]))
+console.log(convertToZeros([1, 2, 3, 4, 5]))
