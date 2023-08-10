@@ -247,8 +247,25 @@
 // console.log(filterOutFalsy(["", [], 0, null, undefined, "0"]))
 
 
-function convertToBoolean (arr) {
-    return arr.map(elem => !!elem)
+// function convertToBoolean (arr) {
+//     return arr.map(elem => !!elem)
+// }
+
+// console.log(convertToBoolean([500, 0, 'Isaac', "", []]))
+
+
+function showRating(rating) {
+    let ratings = ""
+   for (let i = 0; i < Math.floor(rating); ++i) {
+      ratings += "*"
+    if (i !== Math.floor(rating) - 1) {
+      ratings += " "
+    }
+}
+if (!Number.isInteger(rating)) {
+   ratings += " ."
+}
+   return ratings
 }
 
-console.log(convertToBoolean([500, 0, 'Isaac', "", []]))
+console.log(showRating(4.5))
