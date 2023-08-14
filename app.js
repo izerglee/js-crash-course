@@ -254,18 +254,34 @@
 // console.log(convertToBoolean([500, 0, 'Isaac', "", []]))
 
 
-function showRating(rating) {
-    let ratings = ""
+// function showRating(rating) {
+//     let ratings = ""
+//    for (let i = 0; i < Math.floor(rating); ++i) {
+//       ratings += "*"
+//     if (i !== Math.floor(rating) - 1) {
+//       ratings += " "
+//     }
+// }
+// if (!Number.isInteger(rating)) {
+//    ratings += " ."
+// }
+//    return ratings
+// }
+
+// console.log(showRating(4.5))
+
+function showRating (rating) {
+  let ratings = ""
    for (let i = 0; i < Math.floor(rating); ++i) {
-      ratings += "*"
-    if (i !== Math.floor(rating) - 1) {
-      ratings += " "
-    }
-}
-if (!Number.isInteger(rating)) {
-   ratings += " ."
-}
+ ratings += "*"
+ if ( i !== Math.floor(rating) - 1) {
+    ratings += " "
+ }
+   }
+   if (!Number.isInteger(rating)) {
+    ratings += " ."
+   }
    return ratings
 }
 
-console.log(showRating(4.5))
+console.log(showRating(5.5))
