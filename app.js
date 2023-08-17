@@ -270,18 +270,45 @@
 
 // console.log(showRating(4.5))
 
-function showRating (rating) {
-  let ratings = ""
-   for (let i = 0; i < Math.floor(rating); ++i) {
- ratings += "*"
- if ( i !== Math.floor(rating) - 1) {
-    ratings += " "
- }
-   }
-   if (!Number.isInteger(rating)) {
-    ratings += " ."
-   }
-   return ratings
-}
+// function showRating (rating) {
+//   let ratings = ""
+//    for (let i = 0; i < Math.floor(rating); ++i) {
+//  ratings += "*"
+//  if ( i !== Math.floor(rating) - 1) {
+//     ratings += " "
+//  }
+//    }
+//    if (!Number.isInteger(rating)) {
+//     ratings += " ."
+//    }
+//    return ratings
+// }
 
-console.log(showRating(5.5))
+// console.log(showRating(5.5))
+
+
+// function sortLowToHigh(numbers) {
+//    return numbers.sort((a, b) => a - b)
+// }
+
+// console.log(sortLowToHigh([1, 5, 0, 10, 4]))
+
+
+let users = [{
+   username: 'Isaac',
+   email: 'isaaclee@gmail.com',
+   subscriptionStatus: 'VIP',
+   discordId: 'isaaclee#0001',
+   lessonsCompleted: [0, 1],
+} ,
+{
+   username: 'Mitri',
+   email: 'Mitri@gmail.com',
+   subscriptionStatus: 'VIP',
+   discordId: 'Mitri#0001',
+   lessonsCompleted: [0, 1, 2, 3],
+},
+]
+
+console.log(users[0]);
+
