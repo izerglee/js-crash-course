@@ -297,6 +297,7 @@
 let users = [{
    username: 'Isaac',
    email: 'isaaclee@gmail.com',
+   password: 'test123',
    subscriptionStatus: 'VIP',
    discordId: 'isaaclee#0001',
    lessonsCompleted: [0, 1],
@@ -304,11 +305,33 @@ let users = [{
 {
    username: 'Mitri',
    email: 'Mitri@gmail.com',
+   password: 'test234',
    subscriptionStatus: 'VIP',
    discordId: 'Mitri#0001',
    lessonsCompleted: [0, 1, 2, 3],
 },
+{
+   username: 'Zen',
+   email: 'Zen@gmail.com',
+   password: 'Zen123',
+   subscriptionStatus: 'VIP',
+   discordId: 'Zen#0001',
+   lessonsCompleted: [0, 1, 2, 3],
+},
 ]
 
-console.log(users[0]);
+function login (email, password) {
+   for (let i = 0; i < users.length; ++i) {
+      if (users[i] === email) {
+         console.log(users[i])
+         if (users[i].password === password) {
+            console.log('log the user in - the details are correct')
+         }
+         else{
+            console.log('password is incorrect - try again')
+         }
+      }
+   }
+}
 
+login('isaaclee@gmail.com', 'test123');
