@@ -1,5 +1,5 @@
 // function calcRemainder (num1, num2) {
-//     return num1 % num2 
+//     return num1 % num2
 // }
 
 // console.log(calcRemainder(4, 2))
@@ -22,18 +22,14 @@
 // console.log(booleanInteger(2))
 // console.log(booleanInteger(5))
 
-
 // function loggedAndSubscribed (status, user) {
 //   return status === 'LOGGED_IN' && user === 'SUBSCRIBED'
-  
+
 // }
-
-
 
 // console.log(loggedAndSubscribed('LOGGED_IN', 'SUBSCRIBED'))
 // console.log(loggedAndSubscribed('LOGGED_OUT', 'SUBSCRIBED'))
 // console.log(loggedAndSubscribed('LOGGED_IN', 'UNSUBSCRIBED'))
-
 
 // let grades = ['A+', 'FAIL', 'A']
 
@@ -63,9 +59,8 @@
 
 // console.log(cents)
 
-
 // function filerOutFalsy(elem1, elem2) {
-//     return (!elem1) ? elem1 : elem2 
+//     return (!elem1) ? elem1 : elem2
 // }
 
 // console.log(filerOutFalsy(0, 5));
@@ -80,7 +75,7 @@
 // console.log(arrLength([5, 0, -4, 1]));
 // console.log(arrLength([]));
 
-// function lastElem(elem){ 
+// function lastElem(elem){
 //     return elem[elem.length - 1]
 // }
 
@@ -108,8 +103,6 @@
 //     return sum
 // }
 
-
-
 // console.log(progressiveSum(3))
 // console.log(progressiveSum(4))
 // console.log(progressiveSum(601))
@@ -129,7 +122,7 @@
 // console.log(calcTime(50))
 // console.log(calcTime(300))
 
-// function getMax (arr) { 
+// function getMax (arr) {
 //     let max = arr[0]
 //     for (let i = 0; i < arr.length; ++i) {
 //         if(arr[i] > max) {
@@ -137,7 +130,7 @@
 //         }
 //     }
 // return max
-// } 
+// }
 
 // console.log(getMax([-100, -200, -300]
 
@@ -184,7 +177,7 @@
 // function convertToZeros(arr) {
 //     let newArr = 0;
 //     for (let i = 0; i < arr.length; ++i) {
-//       newArr[i] = 0  
+//       newArr[i] = 0
 //     }
 //     return newArr;
 // }
@@ -201,7 +194,6 @@
 // console.log(convertToZeros([5, 100, 0]))
 // console.log(convertToZeros([1, 2, 3, 4, 5]))
 
-
 // function removeApples(arr) {
 //    let newArr = []
 //     for (let i = 0; i < arr.length; ++i) {
@@ -216,7 +208,6 @@
 // console.log(removeApples(['Tomato', 'Orange', 'Banana']))
 // console.log(removeApples(['Banana', 'Orange', 'Apple']))
 
-
 // function removeApples(arr) {
 //     return arr.filter(elem => elem !== 'Apple')
 // }
@@ -225,13 +216,11 @@
 // console.log(removeApples(['Tomato', 'Orange', 'Banana']))
 // console.log(removeApples(['Banana', 'Orange', 'Apple']))
 
-
 // function filterOutFalsy (arr) {
-// return arr.filter(elem => !!elem === true) 
+// return arr.filter(elem => !!elem === true)
 // }
 
 // console.log(filterOutFalsy(["", [], 0, null, undefined, "0"]))
-
 
 // function filterOutFalsy (arr) {
 //     let falsyArr = []
@@ -246,13 +235,11 @@
 
 // console.log(filterOutFalsy(["", [], 0, null, undefined, "0"]))
 
-
 // function convertToBoolean (arr) {
 //     return arr.map(elem => !!elem)
 // }
 
 // console.log(convertToBoolean([500, 0, 'Isaac', "", []]))
-
 
 // function showRating(rating) {
 //     let ratings = ""
@@ -286,52 +273,79 @@
 
 // console.log(showRating(5.5))
 
-
 // function sortLowToHigh(numbers) {
 //    return numbers.sort((a, b) => a - b)
 // }
 
 // console.log(sortLowToHigh([1, 5, 0, 10, 4]))
 
+let users = [
+  {
+    username: "Isaac",
+    email: "isaaclee@gmail.com",
+    password: "test123",
+    subscriptionStatus: "VIP",
+    discordId: "isaaclee#0001",
+    lessonsCompleted: [0, 1],
+  },
+  {
+    username: "Mitri",
+    email: "Mitri@gmail.com",
+    password: "test234",
+    subscriptionStatus: "VIP",
+    discordId: "Mitri#0001",
+    lessonsCompleted: [0, 1, 2, 3],
+  },
+  {
+    username: "Zen",
+    email: "Zen@gmail.com",
+    password: "Zen123",
+    subscriptionStatus: "VIP",
+    discordId: "Zen#0001",
+    lessonsCompleted: [0, 1, 2, 3],
+  },
+];
 
-let users = [{
-   username: 'Isaac',
-   email: 'isaaclee@gmail.com',
-   password: 'test123',
-   subscriptionStatus: 'VIP',
-   discordId: 'isaaclee#0001',
-   lessonsCompleted: [0, 1],
-} ,
-{
-   username: 'Mitri',
-   email: 'Mitri@gmail.com',
-   password: 'test234',
-   subscriptionStatus: 'VIP',
-   discordId: 'Mitri#0001',
-   lessonsCompleted: [0, 1, 2, 3],
-},
-{
-   username: 'Zen',
-   email: 'Zen@gmail.com',
-   password: 'Zen123',
-   subscriptionStatus: 'VIP',
-   discordId: 'Zen#0001',
-   lessonsCompleted: [0, 1, 2, 3],
-},
-]
-
-function login (email, password) {
-   for (let i = 0; i < users.length; ++i) {
-      if (users[i] === email) {
-         console.log(users[i])
-         if (users[i].password === password) {
-            console.log('log the user in - the details are correct')
-         }
-         else{
-            console.log('password is incorrect - try again')
-         }
+function login(email, password) {
+  for (let i = 0; i < users.length; ++i) {
+    if (users[i].email === email) {
+      console.log(users[i]);
+      if (users[i].password === password) {
+        console.log("log the user in - the details are correct");
+      } else {
+        console.log("password is incorrect - try again");
       }
-   }
+      return;
+    }
+  }
 }
 
-login('isaaclee@gmail.com', 'test123');
+login("isaaclee@gmail.com", "test123");
+
+function register(
+  username,
+  email,
+  password,
+  subscriptionStatus,
+  discordId,
+  lessonsCompleted
+) {
+   let user = {
+      username : username ,
+      email : email,
+      password : password,
+      subscriptionStatus : subscriptionStatus,
+      discordId : discordId,
+      lessonsCompleted : lessonsCompleted,
+   }
+   console.log(user)
+}
+
+register(
+  "Emilyn",
+  "Emilyn@gmail.com",
+  "emi123",
+  "VIP",
+  "milli#0001",
+  [0, 1, 2, 3, 4]
+);
