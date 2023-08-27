@@ -338,14 +338,16 @@ function register(
       discordId : discordId,
       lessonsCompleted : lessonsCompleted,
    }
-   console.log(user)
+   users.push(user)
 }
 
 register(
-  "Emilyn",
-  "Emilyn@gmail.com",
-  "emi123",
+  "Michelle",
+  "Michellen@gmail.com",
+  "mitch123",
   "VIP",
   "milli#0001",
   [0, 1, 2, 3, 4]
 );
+
+console.log(users)
