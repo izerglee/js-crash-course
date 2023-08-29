@@ -352,13 +352,22 @@
 
 // console.log(users)
 
-function sortHightoLow (numbers) {
-    return numbers.sort((a, b) =>  b.price - a.price )
-}
+// function sortHightoLow (numbers) {
+//     return numbers.sort((a, b) =>  b.price - a.price )
+// }
 
-console.log(
-    sortHightoLow([
-    {id: 1, price: 50}, 
-    {id: 2, price: 0}, 
-    {id: 3, price: 500},
-]));
+// console.log(
+//     sortHightoLow([
+//     {id: 1, price: 50}, 
+//     {id: 2, price: 0}, 
+//     {id: 3, price: 500},
+// ]));
+
+
+// // First way of accessing an element 
+// console.log(document.querySelector('#title'))
+
+// // Second way of accessing an element 
+// console.log(document.getElementById('title'))
+
+document.querySelector('#title').innerHTML += 'Frontend Simplified'
