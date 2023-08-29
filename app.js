@@ -279,75 +279,86 @@
 
 // console.log(sortLowToHigh([1, 5, 0, 10, 4]))
 
-let users = [
-  {
-    username: "Isaac",
-    email: "isaaclee@gmail.com",
-    password: "test123",
-    subscriptionStatus: "VIP",
-    discordId: "isaaclee#0001",
-    lessonsCompleted: [0, 1],
-  },
-  {
-    username: "Mitri",
-    email: "Mitri@gmail.com",
-    password: "test234",
-    subscriptionStatus: "VIP",
-    discordId: "Mitri#0001",
-    lessonsCompleted: [0, 1, 2, 3],
-  },
-  {
-    username: "Zen",
-    email: "Zen@gmail.com",
-    password: "Zen123",
-    subscriptionStatus: "VIP",
-    discordId: "Zen#0001",
-    lessonsCompleted: [0, 1, 2, 3],
-  },
-];
+// let users = [
+//   {
+//     username: "Isaac",
+//     email: "isaaclee@gmail.com",
+//     password: "test123",
+//     subscriptionStatus: "VIP",
+//     discordId: "isaaclee#0001",
+//     lessonsCompleted: [0, 1],
+//   },
+//   {
+//     username: "Mitri",
+//     email: "Mitri@gmail.com",
+//     password: "test234",
+//     subscriptionStatus: "VIP",
+//     discordId: "Mitri#0001",
+//     lessonsCompleted: [0, 1, 2, 3],
+//   },
+//   {
+//     username: "Zen",
+//     email: "Zen@gmail.com",
+//     password: "Zen123",
+//     subscriptionStatus: "VIP",
+//     discordId: "Zen#0001",
+//     lessonsCompleted: [0, 1, 2, 3],
+//   },
+// ];
 
-function login(email, password) {
-  for (let i = 0; i < users.length; ++i) {
-    if (users[i].email === email) {
-      console.log(users[i]);
-      if (users[i].password === password) {
-        console.log("log the user in - the details are correct");
-      } else {
-        console.log("password is incorrect - try again");
-      }
-      return;
-    }
-  }
+// function login(email, password) {
+//   for (let i = 0; i < users.length; ++i) {
+//     if (users[i].email === email) {
+//       console.log(users[i]);
+//       if (users[i].password === password) {
+//         console.log("log the user in - the details are correct");
+//       } else {
+//         console.log("password is incorrect - try again");
+//       }
+//       return;
+//     }
+//   }
+// }
+
+// login("isaaclee@gmail.com", "test123");
+
+// function register(
+//   username,
+//   email,
+//   password,
+//   subscriptionStatus,
+//   discordId,
+//   lessonsCompleted
+// ) {
+//    let user = {
+//       username : username ,
+//       email : email,
+//       password : password,
+//       subscriptionStatus : subscriptionStatus,
+//       discordId : discordId,
+//       lessonsCompleted : lessonsCompleted,
+//    }
+//    users.push(user)
+// }
+
+// register(
+//   "Michelle",
+//   "Michellen@gmail.com",
+//   "mitch123",
+//   "VIP",
+//   "milli#0001",
+//   [0, 1, 2, 3, 4]
+// );
+
+// console.log(users)
+
+function sortHightoLow (numbers) {
+    return numbers.sort((a, b) =>  b.price - a.price )
 }
 
-login("isaaclee@gmail.com", "test123");
-
-function register(
-  username,
-  email,
-  password,
-  subscriptionStatus,
-  discordId,
-  lessonsCompleted
-) {
-   let user = {
-      username : username ,
-      email : email,
-      password : password,
-      subscriptionStatus : subscriptionStatus,
-      discordId : discordId,
-      lessonsCompleted : lessonsCompleted,
-   }
-   users.push(user)
-}
-
-register(
-  "Michelle",
-  "Michellen@gmail.com",
-  "mitch123",
-  "VIP",
-  "milli#0001",
-  [0, 1, 2, 3, 4]
-);
-
-console.log(users)
+console.log(
+    sortHightoLow([
+    {id: 1, price: 50}, 
+    {id: 2, price: 0}, 
+    {id: 3, price: 500},
+]));
