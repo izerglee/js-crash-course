@@ -358,16 +358,15 @@
 
 // console.log(
 //     sortHightoLow([
-//     {id: 1, price: 50}, 
-//     {id: 2, price: 0}, 
+//     {id: 1, price: 50},
+//     {id: 2, price: 0},
 //     {id: 3, price: 500},
 // ]));
 
-
-// // First way of accessing an element 
+// // First way of accessing an element
 // console.log(document.querySelector('#title'))
 
-// // Second way of accessing an element 
+// // Second way of accessing an element
 // console.log(document.getElementById('title'))
 
 // document.querySelector('#title').innerHTML += 'Frontend Simplified'
@@ -375,13 +374,24 @@
 // Promises section
 
 // fetch("https://jsonplaceholder.typicode.com/users/1")
-const emailRef = document.querySelector(".email");
-console.log(emailRef)
+ const emailRef = document.querySelector(".email");
 
 // 1. Then
-fetch("https://jsonplaceholder.typicode.com/users/1").then(response => { 
-response.json().then(data => {
-    console.log(data)
-    emailRef.innerHTML = data.name;
-}) 
-})
+// fetch("https://jsonplaceholder.typicode.com/users/1")
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   });
+
+
+// 2. Async/Await
+async function main() {
+const response = await fetch("https://jsonplaceholder.typicode.com/users/1")
+const data = await response.json()
+console.log(data)
+emailRef.innerHTML = data.email
+}
+
+main()
