@@ -374,7 +374,7 @@
 // Promises section
 
 // fetch("https://jsonplaceholder.typicode.com/users/1")
- const emailRef = document.querySelector(".email");
+//  const emailRef = document.querySelector(".status");
 
 // 1. Then
 // fetch("https://jsonplaceholder.typicode.com/users/1")
@@ -387,11 +387,44 @@
 
 
 // 2. Async/Await
-async function main() {
-const response = await fetch("https://jsonplaceholder.typicode.com/users/1")
-const data = await response.json()
-console.log(data)
-emailRef.innerHTML = data.email
+// async function main() {
+// const response = await fetch("https://jsonplaceholder.typicode.com/users/1")
+// const data = await response.json()
+// console.log(data)
+// emailRef.innerHTML = data.email
+// }
+
+// main()
+
+// const statusRef = document.querySelector('.status') 
+
+// function getSubscriptionStatus () {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve("VIP")
+
+//         }, 2000);
+//     })
+// }
+
+// async function main() {
+//     const status = (await getSubscriptionStatus())
+//     statusRef.innerHTML = status
+// }
+
+// main()
+
+
+// Challenge questions - Promises
+
+
+function getVideo(subscriptionStatus) {
+return new Promise((resolve, reject) => {
+    resolve("VIP")
+    resolve("FREE")
+})
 }
 
-main()
+async function main() {
+    const status = (await )
+}
