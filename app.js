@@ -396,17 +396,17 @@
 
 // main()
 
-const statusRef = document.querySelector('.status') 
-const videoRef = document.querySelector('.video')
+// const statusRef = document.querySelector('.status') 
+// const videoRef = document.querySelector('.video')
  
-function getSubscriptionStatus () {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve("null")
+// function getSubscriptionStatus () {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve("null")
 
-        }, 2000);
-    })
-}
+//         }, 2000);
+//     })
+// }
 
 // async function main() {
 //     const status = (await getSubscriptionStatus())
@@ -419,30 +419,44 @@ function getSubscriptionStatus () {
 // Challenge questions - Promises
 
 
-function getVideo(subscriptionStatus) {
-return new Promise((resolve, reject) => {
-    if (subscriptionStatus === "VIP"){
-        resolve ("show video")
-    }
-else if (subscriptionStatus === "FREE"){
-    return ("show trailer")
-}
-else {
-    reject("no video")
-}
-})
+// function getVideo(subscriptionStatus) {
+// return new Promise((resolve, reject) => {
+//     if (subscriptionStatus === "VIP"){
+//         resolve ("show video")
+//     }
+// else if (subscriptionStatus === "FREE"){
+//     return ("show trailer")
+// }
+// else {
+//     reject("no video")
+// }
+// })
+// }
+
+// async function main() {
+//     const status = await getSubscriptionStatus() 
+//     statusRef.innerHTML = status
+//     try {
+//         console.log(getVideo(status))
+//     }
+//     catch(e) {
+//         console.log(e)
+//         videoRef.innerHTML = e
+//     }
+// }
+
+// main()
+
+
+
+async function postByUser(userId) {
+    const promise = await fetch("https://jsonplaceholder.typicode.com/posts")
+
+    const result = await promise.json()
+
+    const posts = result.filter(element => element.userId === userId)
+
+    console.log(posts)  
 }
 
-async function main() {
-    const status = await getSubscriptionStatus() 
-    statusRef.innerHTML = status
-    try {
-        console.log(getVideo(status))
-    }
-    catch(e) {
-        console.log(e)
-        videoRef.innerHTML = e
-    }
-}
-
-main()
+postByUser(4);
