@@ -449,14 +449,29 @@
 
 
 
-async function postByUser(userId) {
-    const promise = await fetch("https://jsonplaceholder.typicode.com/posts")
+// async function postByUser(userId) {
+//     const promise = await fetch("https://jsonplaceholder.typicode.com/posts")
+
+//     const result = await promise.json()
+
+//     const posts = result.filter(element => element.userId === userId)
+
+//     console.log(posts)  
+// }
+
+// postByUser(4);
+
+
+async function firstSixIncomplete(userId) {
+    const promise = await fetch("https://jsonplaceholder.typicode.com/todos")
 
     const result = await promise.json()
 
-    const posts = result.filter(element => element.userId === userId)
+    const incompleteTask = result.filter(element => !element.completed).slice(0, 6)
 
-    console.log(posts)  
+  return console.log(incompleteTask)  
+
 }
 
-postByUser(4);
+firstSixIncomplete(1);
+
